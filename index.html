@@ -21,7 +21,6 @@
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
             <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
-            <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
             <ul aria-label="Primary" role="list" class="nav-list">
@@ -30,14 +29,15 @@
             </ul>
           </nav>
           <button class="subscribe-button" style="text-align: center;" type="submit">SUBSCRIBE</button>
+          
         </div>
       </div>
     </header>
   
-    <section class="padding-block-900">
+    <section class="padding-block header-text">
       <div class="container">
         <div class="flow">
-          <h1 class="fs-primary-heading catcher">DRONOTICZ</h1>
+          <h1 class="main-heading catcher">DRONOTICZ</h1>
           <p class="era">THE ERA OF DRONES</p>
           <hr/>
         </div>
@@ -45,41 +45,38 @@
     </section>
   </div>
 
-  <div class="content-wrapper">
-    <div class="">
+    <section class="article-section">
       <div class="section-heading">
-        <h1 class="fs-secondary-heading">LATEST ARTICLES</h1>
+        <h1 class="secondary-heading">LATEST ARTICLES</h1>
         <hr/>
       </div>
     
-      <div class="container">
-        <div class="">
-          <div class="card">
-            <img src="images/drone1.jpg" alt="Image 1">
-            <hr/>
-            <p>How to automate<br/> surveillance drones</p>
-          </div>
-          
-          <div class="card">
-            <img src="images/drone2.jpg" alt="Image 2">
-            <hr/>
-            <p>Robotics and Artificial <br/>Intelligence</p>
-          </div>
-          
-          <div class="card">
-            <img src="images/drone4.jpg" style="height: 166px;" alt="Image 3">
-            <hr/>
-            <p>Improving Lives through <br/>Robotics Prosthetics</p>
-          </div>
-          
-          <div class="card">
-            <img src="images/drone6.jpg" alt="Image 4">
-            <hr/>
-            <p>Powers of Robotics in<br/> Agriculture</p>
-          </div>
+      <div class="card-containers">
+        <div class="cards">
+          <img src="images/drone1.jpg" alt="Image 1">
+          <hr/>
+          <p>How to automate<br/> surveillance drones</p>
+        </div>
+    
+        <div class="cards">
+          <img src="images/drone2.jpg" alt="Image 2">
+          <hr/>
+          <p>Robotics and Artificial <br/>Intelligence</p>
+        </div>
+        
+        <div class="cards">
+          <img src="images/drone4.jpg" alt="Image 3">
+          <hr/>
+          <p>Improving Lives through <br/>Robotics Prosthetics</p>
+        </div>
+        
+        <div class="cards">
+          <img src="images/drone6.jpg" alt="Image 4">
+          <hr/>
+          <p>Powers of Robotics in<br/> Agriculture</p>
         </div>
       </div>
-    </div>
+    </section>
     
   
     <div class="row">
@@ -87,9 +84,8 @@
         <img src="images/drone8.jpg" alt="Snow" style="width:100%">
       </div>
       <div class="column">
-        <div class="">
           <div class="section-heading">
-            <h1 class="fs-secondary-heading">ABOUT US</h1>
+            <h1 class="secondary-heading">ABOUT US</h1>
             <hr/>
           </div>
               <p>Welcome to our dronoticz, where innovation and technology converge to shape the future. We revolutionize 
@@ -100,39 +96,76 @@
                 challenges, and shape a future where intelligent machines work hand-in-hand with humans. Discover the power of robotics 
                 and be part of the revolution.
               </p>
-        </div>
       </div>
     </div>
   
-    <div class="subscribe-feature">
-      <div class="subscribe-elements">
-        <div class="section-heading">
-          <h1 class="fs-secondary-heading">SUBSCRIBE</h1>
+    <div class="subscribe">
+      <div class="subscribe-container">
+        <div class="subscribe-content">
+          <div class="subscribe-heading">
+            <h1>SUBSCRIBE</h1>
+          </div>
+          <p class="subscribe-texts">Sign-up to our newsletter</p>
+          <input type="email" placeholder="Your Email Address">
+          <div class="btn-container">
+            <button>SUBMIT</button>
+          </div>
         </div>
-        <p class="subscribe-description">Sign-up to our newsletter</p>
-        <input class="email-input" type="email" placeholder="Your Email Address">
       </div>
-      <button class="subscribe-button" type="submit">SUBMIT</button>
     </div>
-  </div>
   
 
   <!--Footer Start-->
-  <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
-    <div class="">
-      <div class="primary-footer-wrapper">
-        <div class="primary-footer-logo-social">
-          <img src="images/twitter.jpg" alt="">
-          <img src="images/linkedin.png" alt="">
-          <img src="images/pinterest.png" alt="">
+  <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-social">
+          <div class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <g clip-path="url(#clip0_20_202)">
+              <path d="M11.3252 32.6251C24.9068 32.6251 32.3374 21.3702 32.3374 11.6129C32.3374 11.2965 32.3304 10.9731 32.3163 10.6567C33.7618 9.61131 35.0092 8.3165 36 6.83307C34.6538 7.43202 33.2245 7.82319 31.7609 7.99323C33.3019 7.06948 34.4558 5.61833 35.0086 3.90877C33.5588 4.76796 31.9734 5.37404 30.3202 5.70104C29.2063 4.51746 27.7335 3.7338 26.1295 3.4712C24.5256 3.2086 22.8798 3.4817 21.4466 4.24827C20.0134 5.01484 18.8727 6.23218 18.2008 7.71209C17.5288 9.192 17.3631 10.852 17.7293 12.4356C14.7937 12.2883 11.9219 11.5257 9.29997 10.1973C6.67804 8.86886 4.36454 7.00428 2.50945 4.7244C1.5666 6.34999 1.27808 8.27359 1.70255 10.1043C2.12701 11.9349 3.23259 13.5353 4.79461 14.5801C3.62194 14.5429 2.47496 14.2271 1.44844 13.659V13.7504C1.44739 15.4563 2.03715 17.11 3.11746 18.4303C4.19778 19.7506 5.70199 20.656 7.37437 20.9926C6.28808 21.2898 5.14797 21.3331 4.04227 21.1192C4.51418 22.5863 5.43236 23.8695 6.66866 24.7896C7.90495 25.7098 9.39768 26.221 10.9385 26.252C8.32264 28.3068 5.09126 29.4213 1.76484 29.416C1.17493 29.4151 0.585599 29.379 0 29.3078C3.37928 31.4757 7.3103 32.6272 11.3252 32.6251Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_20_202">
+              <rect width="36" height="36" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </div>
+          <div class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 31 31" fill="none">
+              <g clip-path="url(#clip0_20_204)">
+                <path d="M28.7053 0H2.28867C1.02324 0 0 0.999024 0 2.23418V28.7598C0 29.9949 1.02324 31 2.28867 31H28.7053C29.9707 31 31 29.9949 31 28.7658V2.23418C31 0.999024 29.9707 0 28.7053 0ZM9.19707 26.4166H4.59551V11.6189H9.19707V26.4166ZM6.89629 9.60273C5.41895 9.60273 4.22617 8.40996 4.22617 6.93867C4.22617 5.46738 5.41895 4.27461 6.89629 4.27461C8.36758 4.27461 9.56035 5.46738 9.56035 6.93867C9.56035 8.40391 8.36758 9.60273 6.89629 9.60273ZM26.4166 26.4166H21.8211V19.2236C21.8211 17.5102 21.7908 15.3002 19.4295 15.3002C17.0379 15.3002 16.6746 17.1711 16.6746 19.1025V26.4166H12.0852V11.6189H16.493V13.6412H16.5535C17.165 12.4787 18.6666 11.2496 20.9008 11.2496C25.5568 11.2496 26.4166 14.3133 26.4166 18.2973V26.4166Z" fill="black"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_20_204">
+                  <rect width="36" height="36" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="footer-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 59 59" fill="none">
+              <g clip-path="url(#clip0_20_226)">
+                <path d="M29.5 0C13.2059 0 0 13.2059 0 29.5C0 42.0029 7.77832 52.6736 18.7486 56.9719C18.4951 54.6326 18.2531 51.0603 18.8523 48.5137C19.3939 46.209 22.3094 33.8559 22.3094 33.8559C22.3094 33.8559 21.4221 32.0928 21.4221 29.477C21.4221 25.3746 23.7959 22.3094 26.7574 22.3094C29.2695 22.3094 30.491 24.1992 30.491 26.4693C30.491 29.0045 28.8777 32.7842 28.048 36.2873C27.3566 39.2258 29.523 41.6227 32.4154 41.6227C37.6586 41.6227 41.6918 36.0914 41.6918 28.1172C41.6918 21.0533 36.6215 16.1098 29.3732 16.1098C20.9842 16.1098 16.0521 22.4016 16.0521 28.9123C16.0521 31.4475 17.0316 34.167 18.2531 35.642C18.4951 35.9301 18.5297 36.1951 18.4605 36.4832C18.2416 37.4166 17.7346 39.4217 17.6424 39.825C17.5156 40.3666 17.216 40.4818 16.6514 40.2168C12.9639 38.4998 10.6592 33.1184 10.6592 28.7855C10.6592 19.4746 17.4234 10.9357 30.1453 10.9357C40.3781 10.9357 48.3293 18.2301 48.3293 27.9789C48.3293 38.1426 41.9223 46.3242 33.0262 46.3242C30.0416 46.3242 27.2299 44.7686 26.2619 42.9363C26.2619 42.9363 24.7869 48.5713 24.4297 49.9541C23.7613 52.5123 21.9637 55.7273 20.7652 57.6863C23.5309 58.5391 26.4578 59 29.5 59C45.7941 59 59 45.7941 59 29.5C59 13.2059 45.7941 0 29.5 0Z" fill="black"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_20_226">
+                  <rect width="59" height="59" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
         </div>
-        <div class="primary-footer-links">
-          <a href="#" style="color: black; width: 82px; height: 19px;">ABOUT US</a>
-          <a href="#" style="color: black; width: 76px; height: 19px;">ARTICLES</a>
+        <div class="footer-link">
+          <div class="link-cont">
+            <a href="#" style="color: black; width: 82px; height: 19px;">ABOUT US</a>
+            <a href="#" style="color: black; width: 76px; height: 19px;">ARTICLES</a>
+          </div>
+          
           <button type="submit" style="text-align: center;">SUBSCRIBE</button>
         </div>
       </div>
-    </div>
+      
   </footer>
   <!--Footer End-->
 </body>
